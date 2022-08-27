@@ -20,12 +20,13 @@
         <version.jacoco>0.8.5</version.jacoco>
         <fs>${file.separator}</fs>
         <version.java>11</version.java>
-        <version.springboot>2.3.5.RELEASE</version.springboot>
+        <version.springboot>2.5.10</version.springboot>
         <version.junit>5.7.0</version.junit>
         <version.junit.platform>1.5.2</version.junit.platform>
         <version.jacoco>0.8.5</version.jacoco>
-        <version.h2>1.4.197</version.h2>
-        <version.postgres>42.1.4</version.postgres>
+        <version.h2>2.1.210</version.h2>
+        <version.postgres>42.4.1</version.postgres>
+        <version.flyway>8.4.4</version.flyway>
         <version.testcontainers>1.15.1</version.testcontainers>
         <version.selenium>3.141.59</version.selenium>
         <version.surefire-failsafe>3.0.0-M4</version.surefire-failsafe>
@@ -79,6 +80,11 @@
                 <groupId>org.postgresql</groupId>
                 <artifactId>postgresql</artifactId>
                 <version>${version.postgres}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.flywaydb</groupId>
+                <artifactId>flyway-core</artifactId>
+                <version>${version.flyway}</version>
             </dependency>
             <dependency>
                 <groupId>org.junit.jupiter</groupId>
